@@ -8,9 +8,9 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="JavaFXSwingApplication1.jar" size="6385" download="eager" />
+    <jar href="JavaFXSwingApplication1.jar" size="11850" download="eager" />
   </resources>
-  <applet-desc  width="800" height="600" main-class="javafxswingapplication1.JavaFXSwingApplication1"  name="JavaFXSwingApplication1" >
+  <applet-desc  width="800" height="600" main-class="javafxswingapplication1.NewJFrame"  name="JavaFXSwingApplication1" >
   </applet-desc>
   <update check="always"/>
 </jnlp>

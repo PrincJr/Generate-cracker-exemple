@@ -31,6 +31,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         cod = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        RESULT = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -56,6 +57,8 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
+        RESULT.setText("X-X-X-X-X-X-X-X-X-X-X-X-X-X-X");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -63,13 +66,15 @@ public class NewJFrame extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(99, 99, 99)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(cod)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(158, 158, 158)
-                        .addComponent(jButton1)))
+                        .addComponent(jButton1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(99, 99, 99)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(RESULT, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(cod)))))
                 .addContainerGap(102, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -81,7 +86,9 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addComponent(cod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
-                .addContainerGap(132, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(RESULT)
+                .addContainerGap(107, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -174,75 +181,75 @@ public class NewJFrame extends javax.swing.JFrame {
                     break;
             }
         }
-        String C2 = (cod.getText()).substring(0, 2); // 0. o
+        String C2 = (cod.getText()).substring(1, 2); // 0. o
         if (null != C2) {
             switch (C2) {
                 case "0":
                     S6 = "F";
-                    S11 = "A";
+                    S12 = "A";
                     break;
                 case "1":
                     S6 = "E";
-                    S11 = "B";
+                    S12 = "B";
                     break;
                 case "2":
                     S6 = "D";
-                    S11 = "8";
+                    S12 = "8";
                     break;
                 case "3":
                     S6 = "C";
-                    S11 = "9";
+                    S12 = "9";
                     break;
                 case "4":
                     S6 = "B";
-                    S11 = "E";
+                    S12 = "E";
                     break;
                 case "5":
                     S6 = "A";
-                    S11 = "F";
+                    S12 = "F";
                     break;
                 case "6":
                     S6 = "9";
-                    S11 = "C";
+                    S12 = "C";
                     break;
                 case "7":
                     S6 = "8";
-                    S11 = "D";
+                    S12 = "D";
                     break;
                 case "8":
                     S6 = "7";
-                    S11 = "2";
+                    S12 = "2";
                     break;
                 case "9":
                     S6 = "6";
-                    S11 = "3";
+                    S12 = "3";
                     break;
                 case "A":
                     S6 = "5";
-                    S11 = "0";
+                    S12 = "0";
                     break;
                 case "B":
                     S6 = "4";
-                    S11 = "1";
+                    S12 = "1";
                     break;
                 case "C":
                     S6 = "3";
-                    S11 = "6";
+                    S12 = "6";
                     break;
                 case "D":
                     S6 = "2";
-                    S11 = "7";
+                    S12 = "7";
                     break;
                 case "E":
                     S6 = "1";
-                    S11 = "4";
+                    S12 = "4";
                     break;
                 case "F":
                     S6 = "0";
-                    S11 = "5";
+                    S12 = "5";
                     break;
             }
-            String C3 = (cod.getText()).substring(0, 3); // 0. o
+            String C3 = (cod.getText()).substring(2, 3); // 0. o
             if (null != C3) {
                 switch (C3) {
                     case "0":
@@ -287,68 +294,682 @@ public class NewJFrame extends javax.swing.JFrame {
                         break;
                 }
             }
-            String C4 = (cod.getText()).substring(0, 4); // 0. o
+
+            String C4 = (cod.getText()).substring(3, 4); // 0. o
             if (null != C4) {
                 switch (C4) {
                     case "0":
                         S8 = "F";
+                        S14 = "0";
                         break;
                     case "1":
                         S8 = "E";
+                        S14 = "1";
                         break;
                     case "2":
                         S8 = "D";
+                        S14 = "2";
                         break;
                     case "3":
                         S8 = "C";
+                        S14 = "3";
                         break;
                     case "4":
                         S8 = "B";
+                        S14 = "4";
                         break;
                     case "5":
                         S8 = "A";
+                        S14 = "5";
                         break;
                     case "6":
                         S8 = "9";
+                        S14 = "6";
                         break;
                     case "7":
                         S8 = "8";
+                        S14 = "7";
                         break;
                     case "8":
                         S8 = "7";
+                        S14 = "8";
                         break;
                     case "9":
                         S8 = "6";
+                        S14 = "9";
                         break;
                     case "A":
                         S8 = "5";
+                        S14 = "A";
                         break;
                     case "B":
                         S8 = "4";
+                        S14 = "B";
                         break;
                     case "C":
                         S8 = "3";
+                        S14 = "C";
                         break;
                     case "D":
                         S8 = "2";
+                        S14 = "D";
                         break;
                     case "E":
                         S8 = "1";
+                        S14 = "E";
                         break;
                     case "F":
                         S8 = "0";
+                        S14 = "F";
                         break;
                 }
             }
-        }
 
-       // feitas coluna 5 , 11, 6, 12, 13, 7,8
+            String C5 = (cod.getText()).substring(4, 5); // 0. o
+            if (null != C5) {
+                switch (C5) {
+                    case "0":
+                        S15 = "1";
+                        S21 = "1";
+                        break;
+                    case "1":
+                        S15 = "0";
+                        S21 = "0";
+                        break;
+                    case "2":
+                        S15 = "3";
+                        S21 = "3";
+                        break;
+                    case "3":
+                        S15 = "2";
+                        S21 = "2";
+                        break;
+                    case "4":
+                        S15 = "5";
+                        S21 = "5";
+                        break;
+                    case "5":
+                        S15 = "4";
+                        S21 = "4";
+                        break;
+                    case "6":
+                        S15 = "7";
+                        S21 = "7";
+                        break;
+                    case "7":
+                        S15 = "6";
+                        S21 = "6";
+                        break;
+                    case "8":
+                        S15 = "9";
+                        S21 = "9";
+                        break;
+                    case "9":
+                        S15 = "8";
+                        S21 = "8";
+                        break;
+
+                }
+            }
+            String C6 = (cod.getText()).substring(5, 6); // 0. o
+            if (null != C6) {
+                switch (C6) {
+                    case "0":
+                        S16 = "A";
+                        S22 = "5";
+                        break;
+                    case "1":
+                        S16 = "B";
+                        S22 = "4";
+                        break;
+                    case "2":
+                        S16 = "8";
+                        S22 = "7";
+                        break;
+                    case "3":
+                        S16 = "9";
+                        S22 = "6";
+                        break;
+                    case "4":
+                        S16 = "E";
+                        S22 = "1";
+                        break;
+                    case "5":
+                        S16 = "F";
+                        S22 = "0";
+                        break;
+                    case "6":
+                        S16 = "C";
+                        S22 = "3";
+                        break;
+                    case "7":
+                        S16 = "D";
+                        S22 = "2";
+                        break;
+                    case "8":
+                        S16 = "2";
+                        S22 = "D";
+                        break;
+                    case "9":
+                        S16 = "3";
+                        S22 = "C";
+                        break;
+                    case "A":
+                        S16 = "0";
+                        S22 = "F";
+                        break;
+                    case "B":
+                        S16 = "1";
+                        S22 = "E";
+                        break;
+                    case "C":
+                        S16 = "6";
+                        S22 = "9";
+                        break;
+                    case "D":
+                        S16 = "7";
+                        S22 = "8";
+                        break;
+                    case "E":
+                        S16 = "4";
+                        S22 = "B";
+                        break;
+                    case "F":
+                        S16 = "5";
+                        S22 = "A";
+                        break;
+
+                }
+            }
+            String C7 = (cod.getText()).substring(6, 7); // 0. o
+            if (null != C7) {
+                switch (C7) {
+                    case "8":
+                        S23 = "4";
+                        break;
+                    case "9":
+                        S23 = "5";
+                        break;
+                    case "A":
+                        S23 = "6";
+                        break;
+                    case "B":
+                        S23 = "7";
+                        break;
+                    case "C":
+                        S16 = "0";
+                        break;
+                    case "D":
+                        S23 = "1";
+                        break;
+                    case "E":
+                        S23 = "2";
+                        break;
+                    case "F":
+                        S23 = "3";
+                        break;
+                }
+            }
+
+            String C8 = (cod.getText()).substring(7, 8); // 0. o
+            if (null != C8) {
+                switch (C8) {
+                    case "0":
+                        S24 = "A";
+                        break;
+                    case "1":
+                        S24 = "B";
+                        break;
+                    case "2":
+                        S24 = "8";
+                        break;
+                    case "3":
+                        S24 = "9";
+                        break;
+                    case "4":
+                        S24 = "E";
+                        break;
+                    case "5":
+                        S24 = "F";
+                        break;
+                    case "6":
+                        S24 = "C";
+                        break;
+                    case "7":
+                        S24 = "D";
+                        break;
+                    case "8":
+                        S24 = "2";
+                        break;
+                    case "9":
+                        S24 = "3";
+                        break;
+                    case "A":
+                        S24 = "0";
+                        break;
+                    case "B":
+                        S24 = "1";
+                        break;
+                    case "C":
+                        S24 = "6";
+                        break;
+                    case "D":
+                        S24 = "7";
+                        break;
+                    case "E":
+                        S24 = "4";
+                        break;
+                    case "F":
+                        S24 = "5";
+                        break;
+                }
+            }
+
+            String C9 = (cod.getText()).substring(8, 9); // 0. o
+            if (null != C9) {
+                switch (C9) {
+                    case "0":
+                        S9 = "C";
+                        break;
+                    case "1":
+                        S9 = "D";
+                        break;
+                    case "2":
+                        S9 = "E";
+                        break;
+                    case "3":
+                        S9 = "F";
+                        break;
+                    case "4":
+                        S9 = "8";
+                        break;
+                    case "5":
+                        S9 = "9";
+                        break;
+                    case "6":
+                        S9 = "A";
+                        break;
+                    case "7":
+                        S9 = "B";
+                        break;
+                }
+            }
+
+            String C17 = (cod.getText()).substring(16, 17); // 0. o
+            if (null != C17) {
+                switch (C17) {
+                    case "0":
+                        S1 = "C";
+                        break;
+                    case "1":
+                        S1 = "D";
+                        break;
+                    case "2":
+                        S1 = "E";
+                        break;
+                    case "3":
+                        S1 = "F";
+                        break;
+                    case "4":
+                        S1 = "8";
+                        break;
+                    case "5":
+                        S1 = "9";
+                        break;
+                    case "6":
+                        S1 = "A";
+                        break;
+                    case "7":
+                        S1 = "B";
+                        break;
+                    case "8":
+                        S1 = "C";
+                        break;
+                }
+            }
+
+            String C18 = (cod.getText()).substring(17, 18); // 0. o
+            if (null != C18) {
+                switch (C18) {
+                    case "0":
+                        S2 = "A";
+                        break;
+                    case "1":
+                        S2 = "B";
+                        break;
+                    case "2":
+                        S2 = "8";
+                        break;
+                    case "3":
+                        S2 = "9";
+                        break;
+                    case "4":
+                        S2 = "E";
+                        break;
+                    case "5":
+                        S2 = "F";
+                        break;
+                    case "6":
+                        S2 = "C";
+                        break;
+                    case "7":
+                        S2 = "D";
+                        break;
+                    case "8":
+                        S2 = "2";
+                        break;
+                    case "9":
+                        S2 = "3";
+                        break;
+                    case "A":
+                        S2 = "0";
+                        break;
+                    case "B":
+                        S2 = "1";
+                        break;
+                    case "C":
+                        S2 = "6";
+                        break;
+                    case "D":
+                        S2 = "7";
+                        break;
+                    case "E":
+                        S2 = "4";
+                        break;
+                    case "F":
+                        S2 = "5";
+                        break;
+                }
+            }
+
+            String C19 = (cod.getText()).substring(18, 19); // 0. o
+            if (null != C19) {
+                switch (C19) {
+                    case "0":
+                        S3 = "1";
+                        break;
+                    case "1":
+                        S3 = "0";
+                        break;
+                    case "2":
+                        S3 = "3";
+                        break;
+                    case "3":
+                        S3 = "2";
+                        break;
+                    case "4":
+                        S3 = "5";
+                        break;
+                    case "5":
+                        S3 = "4";
+                        break;
+                    case "6":
+                        S3 = "7";
+                        break;
+                    case "7":
+                        S3 = "6";
+                        break;
+                    case "8":
+                        S3 = "9";
+                        break;
+                    case "9":
+                        S3 = "8";
+                        break;
+                }
+            }
+            String C20 = (cod.getText()).substring(19, 20); // 0. o
+            if (null != C20) {
+                switch (C20) {
+                    case "0":
+                        S4 = "5";
+                        S10 = "5";
+                        break;
+                    case "1":
+                        S4 = "4";
+                        S10 = "4";
+                        break;
+                    case "2":
+                        S4 = "7";
+                        S10 = "7";
+                        break;
+                    case "3":
+                        S4 = "6";
+                        S10 = "6";
+                        break;
+                    case "4":
+                        S4 = "1";
+                        S10 = "1";
+                        break;
+                    case "5":
+                        S4 = "0";
+                        S10 = "0";
+                        break;
+                    case "6":
+                        S4 = "3";
+                        S10 = "3";
+                        break;
+                    case "7":
+                        S4 = "2";
+                        S10 = "2";
+                        break;
+                    case "8":
+                        S4 = "D";
+                        S10 = "D";
+                        break;
+                    case "9":
+                        S4 = "C";
+                        S10 = "C";
+                        break;
+                    case "A":
+                        S4 = "F";
+                        S10 = "F";
+                        break;
+                    case "B":
+                        S4 = "E";
+                        S10 = "E";
+                        break;
+                    case "C":
+                        S4 = "9";
+                        S10 = "9";
+                        break;
+                    case "D":
+                        S4 = "8";
+                        S10 = "8";
+                        break;
+                    case "E":
+                        S4 = "B";
+                        S10 = "B";
+                        break;
+                    case "F":
+                        S4 = "A";
+                        S10 = "A";
+                        break;
+                }
+            }
+
+            String C21 = (cod.getText()).substring(20, 21); // 0. o
+            if (null != C21) {
+                switch (C21) {
+                    case "0":
+                        S17 = "D";
+                        break;
+                    case "1":
+                        S17 = "C";
+                        break;
+                    case "2":
+                        S17 = "F";
+                        break;
+                    case "3":
+                        S17 = "E";
+                        break;
+                    case "4":
+                        S17 = "9";
+                        break;
+                    case "5":
+                        S17 = "8";
+                        break;
+                    case "6":
+                        S17 = "B";
+                        break;
+                    case "7":
+                        S17 = "A";
+                        break;
+                    case "8":
+                        S17 = "7";
+                        break;
+                    case "9":
+                        S17 = "6";
+                        break;
+                }
+            }
+
+            String C22 = (cod.getText()).substring(21, 22); // 0. o
+            if (null != C22) {
+                switch (C22) {
+                    case "0":
+                        S18 = "0";
+                        break;
+                    case "1":
+                        S18 = "1";
+                        break;
+                    case "2":
+                        S18 = "2";
+                        break;
+                    case "3":
+                        S18 = "3";
+                        break;
+                    case "4":
+                        S18 = "4";
+                        break;
+                    case "5":
+                        S18 = "5";
+                        break;
+                    case "6":
+                        S18 = "6";
+                        break;
+                    case "7":
+                        S18 = "7";
+                        break;
+                    case "8":
+                        S18 = "8";
+                        break;
+                    case "9":
+                        S18 = "9";
+                        break;
+                    case "A":
+                        S18 = "A";
+                        break;
+                    case "B":
+                        S18 = "B";
+                        break;
+                    case "C":
+                        S18 = "C";
+                        break;
+                    case "D":
+                        S18 = "D";
+                        break;
+                    case "E":
+                        S18 = "E";
+                        break;
+                    case "F":
+                        S18 = "F";
+                        break;
+                }
+            }
+
+            String C23 = (cod.getText()).substring(22, 23); // 0. o
+            if (null != C23) {
+                switch (C23) {
+                    case "8":
+                        S19 = "5";
+                        break;
+                    case "9":
+                        S19 = "4";
+                        break;
+                    case "A":
+                        S19 = "7";
+                        break;
+                    case "B":
+                        S19 = "6";
+                        break;
+                    case "C":
+                        S19 = "1";
+                        break;
+                    case "D":
+                        S19 = "0";
+                        break;
+                    case "E":
+                        S19 = "3";
+                        break;
+                    case "F":
+                        S19 = "2";
+                        break;
+                }
+            }
+
+            String C24 = (cod.getText()).substring(23, 24); // 0. o
+            if (null != C24) {
+                switch (C24) {
+                    case "0":
+                        S20 = "0";
+                        break;
+                    case "1":
+                        S20 = "1";
+                        break;
+                    case "2":
+                        S20 = "2";
+                        break;
+                    case "3":
+                        S20 = "3";
+                        break;
+                    case "4":
+                        S20 = "4";
+                        break;
+                    case "5":
+                        S20 = "5";
+                        break;
+                    case "6":
+                        S20 = "6";
+                        break;
+                    case "7":
+                        S20 = "7";
+                        break;
+                    case "8":
+                        S20 = "8";
+                        break;
+                    case "9":
+                        S20 = "9";
+                        break;
+                    case "A":
+                        S20 = "A";
+                        break;
+                    case "B":
+                        S20 = "B";
+                        break;
+                    case "C":
+                        S20 = "C";
+                        break;
+                    case "D":
+                        S20 = "D";
+                        break;
+                    case "E":
+                        S20 = "E";
+                        break;
+                    case "F":
+                        S20 = "F";
+                        break;
+
+                }
+            }
+        }
+        
+        RESULT.setText(S1+S2+S3+S4+S5+S6+S7+S8+S9+S10+S11+S12+S13+S14+S15+S16+S17+S18+S19+S20+S21+S22+S23+S24);
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
-     * @param args the command line arguments
-     */
+         * @param args the command line arguments
+         */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -382,6 +1003,7 @@ public class NewJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel RESULT;
     private javax.swing.JTextField cod;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
